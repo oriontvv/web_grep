@@ -7,8 +7,8 @@ from aiohttp import ClientSession, ClientError, ClientTimeout
 
 parser = ArgumentParser()
 parser.add_argument('--word', help='word to find')
-parser.add_argument('--limit', default=16, help='concurrency limit')
-parser.add_argument('--timeout', default=60, help='timeout in seconds')
+parser.add_argument('--limit', default=16, type=int, help='concurrency limit')
+parser.add_argument('--timeout', default=60, type=int, help='timeout in seconds')
 args = parser.parse_args()
 
 semaphore = asyncio.Semaphore(args.limit)
