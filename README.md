@@ -1,5 +1,5 @@
 # web_grep
-A simple example that shows how to fetch urls with python and aiohttp.
+A simple example that shows how to fetch urls from stdin and find specified word with python and aiohttp.
 
 ## usage:
 1. install aiohttp with pip:
